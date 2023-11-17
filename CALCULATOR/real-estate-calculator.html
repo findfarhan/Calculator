@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Real Estate Calculator</title>
+    <meta name="description" content="A collection of calculators associated with real estates, such as mortgage, house affordability, refinance, FHA / VA loans, rental property, roofing, and more." />
+    <link rel="stylesheet" href="./css/style-mobile.css" />
+    <script src="/js/common.js" async></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="//d26tpo4cm8sb6k.cloudfront.net/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="//d26tpo4cm8sb6k.cloudfront.net/icon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="//d26tpo4cm8sb6k.cloudfront.net/icon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+</head>
+
+<body>
+    <div class="mheader">
+        <table align="center" width="100%">
+            <tr>
+                <td width="20%" align="left"><img src="//d26tpo4cm8sb6k.cloudfront.net/img/svg/menu-m.svg" width="31" height="31" id="hmenu" alt="menu"></td>
+                <td width="60%" align="center"><a href="/"><img src="//d26tpo4cm8sb6k.cloudfront.net/img/svg/calculator-m-w.svg" width="183" height="20" alt="calculator.net"></a></td>
+                <td width="20%">&nbsp;</td>
+            </tr>
+        </table>
+    </div>
+    <div id="mmenu" style="display:none;"></div>
+    <div class="mcontent">
+        <div id="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">home</span></a>
+            <meta itemprop="position" content="1" />
+            </span> / <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/financial-calculator.html" itemprop="item"><span itemprop="name">financial</span></a>
+            <meta itemprop="position" content="2" />
+            </span> / <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/real-estate-calculator.html" itemprop="item"><span itemprop="name">real estate calculator</span></a>
+            <meta itemprop="position" content="3" />
+            </span>
+        </div>
+        <h1>Real Estate Calculator</h1>
+
+        <p>Real Estate is a broad term with many different calculations associated with it. Included is a list to help choose the right calculator to fit most real estate needs. If, after perusing this list, you find that the calculator you need doesn't
+            exist, please contact us with your concerns and we determine if it is possible to build one for public use.</p>
+        <h2>Financial</h2>
+        <ul>
+            <li><a href="/mortgage-calculator.html"><i>Mortgage Calculator</i></a>&mdash;plan real estate mortgage loans or compare them against other loans.</li>
+            <li><a href="/house-affordability-calculator.html"><i>House Affordability Calculator</i></a>&mdash;calculate residential real estate affordability based on household income-to-debt estimates or fixed monthly budgets.</li>
+            <li><a href="/mortgage-payoff-calculator.html"><i>Mortgage Payoff Calculator</i></a>&mdash;evaluate mortgage payoffs with additional or lump sum payments.</li>
+            <li><a href="/refinance-calculator.html"><i>Refinance Calculator</i></a>&mdash;plan and/or compare real estate loan refinancing options.</li>
+            <li><a href="/fha-loan-calculator.html"><i>FHA Loan Calculator</i></a>&mdash;estimate and evaluate the payments and options for FHA loans.</li>
+            <li><a href="/va-mortgage-calculator.html"><i>VA Mortgage Calculator</i></a>&mdash;estimate and evaluate the payments and options for VA loans.</li>
+            <li><a href="/down-payment-calculator.html"><i>Down Payment Calculator</i></a>&mdash;calculations centered around the down payment of a home purchase.</li>
+            <li><a href="/apr-calculator.html"><i>APR Calculator</i></a>&mdash;help figure out the real APR of your loan with fees and points.</li>
+            <li><a href="/rental-property-calculator.html"><i>Rental Property Calculator</i></a>&mdash;calculate return percentages, capitalization rate, and cashflows of rental property investments.</li>
+            <li><a href="/rent-calculator.html"><i>Rent Calculator</i></a>&mdash;estimate rental fee affordability based on income and debt levels.</li>
+            <li><a href="/rent-vs-buy-calculator.html"><i>Rent vs. Buy Calculator</i></a>&mdash;evaluate the financial feasibility of a rent-or-buy decision.</li>
+        </ul>
+        <br>
+        <h2>Other</h2>
+        <ul>
+            <li><a href="/area-calculator.html"><i>Area Calculator</i></a>&mdash;estimate the area of real estate property.</li>
+            <li><a href="/concrete-calculator.html"><i>Concrete Calculator</i></a>&mdash;estimate the amount of concrete for a real estate project.</li>
+            <li><a href="/btu-calculator.html"><i>BTU Calculator</i></a>&mdash;estimate the number of BTUs (British Thermal Units) needed for the heating or cooling of a particular property.</li>
+            <li><a href="/stair-calculator.html"><i>Stair Calculator</i></a>&mdash;calculates the stair parameters for a real estate project.</li>
+            <li><a href="/tile-calculator.html"><i>Tile Calculator</i></a>&mdash;estimate the number of tiles for floor, roof, or any other surface coverage needed for any real estate project.</li>
+
+            <li><a href="/square-footage-calculator.html"><i>Square Footage Calculator</i></a>&mdash;estimate the square footage of real estate.</li>
+            <li><a href="/roofing-calculator.html"><i>Roofing Calculator</i></a>&mdash;estimate the roof area and the materials needed for a real estate project.</li>
+
+        </ul>
+
+    </div>
+    <br>
+    <div id="footer">
+        <div id="footernav"><a href="/about-us.html">about us</a> | <a href="/sitemap.html">sitemap</a><br><a href="/about-us.html#terms">terms of use</a> | <a href="/about-us.html#privacy">privacy policy</a><br> &copy; 2008 - 2023 <a href="//www.calculator.net">calculator.net</a></div>
+    </div>
+    <script async>
+        var mmenushstatus = 0;
+
+        function mmenush() {
+            if (mmenushstatus == 0) {
+                document.getElementById("mmenu").innerHTML = '<div><a href="/financial-calculator.html">Financial Calculators</a></div><div><a href="/fitness-and-health-calculator.html">Fitness &amp; Health Calculators</a></div><div><a href="/math-calculator.html">Math Calculators</a></div><div><a href="/other-calculator.html">Other Calculators</a></div><div><a href="/sitemap.html">All Calculators</a></div>';
+                document.getElementById("mmenu").innerHTML += '<form name="calcSearchForm" onsubmit="calcSearch(); return false;" autocomplete="off"><span style="padding-left:10px;"><input type="text" name="calcSearchTerm" id="calcSearchTerm" class="inlongest" onkeyup="return calcSearch();" onFocus="document.onkeydown=null;"> <span id="bluebtn" onClick="return calcSearch();">Search</span></span><br><span id="calcSearchOut"></span></form>';
+                document.getElementById("mmenu").style.display = 'block';
+                mmenushstatus = 1;
+            } else {
+                document.getElementById("mmenu").style.display = 'none';
+                mmenushstatus = 0;
+            }
+        }
+        if (document.getElementById("hmenu")) {
+            document.getElementById("hmenu").addEventListener('click', mmenush);
+        }
+    </script>
+</body>
+
+</html>
